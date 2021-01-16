@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Paul Hill | Football and Sporting Memorabilia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="80px"></a>
+            </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href=""><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+
+    <div class="contact-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Contact us</span>
+                        </div>
+
+                        <form>
+                            <input type="text" name="" id="" placeholder="Enter name">
+                            <input type="text" name="" id="" placeholder="Enter email">
+                            <input class="form-contact" type="text" name="" id="" placeholder="Type anything">
+                            <button type="submit" class="btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for Android and iOS device</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-footer.png">
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow us</h3>
+                <a href="http://www.facebook.com"><img src="images/facebook.png"></a>
+                <a href="http://www.twitter.com"><img src="images/twitter.png"></a>
+                <a href="http://www.ebay.co.uk"><img src="images/ebay-logo.png"></a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Purwa</p>
+    </div>
+</div>
+
+<!--js for toogle menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px"
+        }
+        else{
+            MenuItems.style.maxHeight="0px"
+        }
+    }
+</script>
+</html>
